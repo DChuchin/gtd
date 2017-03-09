@@ -7,33 +7,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="node_modules/shower-material/styles/screen-16x10.css">
 	<style>
+		:root {
+			--blue: #1f40ce;
+			--green: #19fea0;
+			--blue-dark: #1431c2;
+		}
     .caption {
-      background: #1f40ce linear-gradient(135deg, #1f40ce 50%, #1431c2 50%);
+      background: var(--blue) linear-gradient(135deg, var(--blue) 50%, var(--blue-dark) 50%);
     }
 		.slide::after {
 			padding-top: 0;
-			top: 35px;
-      right: 35px;
+			top: 10px;
+      right: 10px;
       left: auto;
 			background: url('pictures/drop.svg');
 			border-radius: 50%;
 			height: 80px;
       width: 80px;
       text-align: center;
-      color: #ffffff;
+      color: var(--blue);
       padding-top: 20px;
 		}
+		.slide.black::after {
+			visibility: visible;
+			color: var(--green);
+		}
 		.slide {
-		  border: 20px solid #1f40ce;
+		  border: 20px solid var(--blue);
       border-radius: 5px;
+			padding: 60px 30px 0;
 		}
     .progress {
-      background: #19fea0;
+      background: var(--green);
       box-shadow: none;
     }
     .slide h2 {
       font-size: 64px;
-      color:#1f40ce;
+      color: var(--blue);
       text-align: center;
       font-weight: 900;
     }
@@ -42,7 +52,7 @@
       margin: 20px auto;
       content: '';
       width: 50px;
-      border-top: 4px solid #1f40ce;
+      border-top: 4px solid var(--blue);
     }
     .slide h3 {
       font-size: 40px;
@@ -55,6 +65,13 @@
 		<h1>Темизаия Drupal 8</h1>
 		<p></p>
 	</header>
+
+	<section class="slide">
+		<h2>
+			Препроцессоры
+		</h2>
+		<img src="pictures/drop-bg.svg" class="left" width="200px" alt="">
+	</section>
 
 	<section class="slide">
 		<h2>
@@ -75,7 +92,7 @@
 
 	<section class="slide">
 		<h3>2. Переменные</h3>
-    
+
     <style>
       .highlight {
         background-color: #f8f8f8;
@@ -103,7 +120,7 @@
 
 	<section class="slide">
 		<h2>Как работает postCSS</h2>
-		<img src="pictures/gamburger.png" widht="auto" height="500" alt="" class="left bottom">
+		<img class="gamburger" src="pictures/gamburger.png" widht="auto" height="350" alt="" class="left bottom">
 		<ul id="postcss-list">
 			<li>Парсер</li>
 			<li id="middle">Плагины</li>
@@ -112,12 +129,11 @@
 		<style>
 			#postcss-list {
 				float: right;
-				width: 250px;
-				margin-top: 35px;
+				width: 350px;
+				margin-top: 15px;
 				font-size: 40px;
 			}
 			#postcss-list li {
-				margin-bottom: 20px;
 			}
 			#postcss-list li::before {
 				vertical-align: middle;
@@ -128,16 +144,19 @@
 			}
 			#middle::before {
 				content: '';
-				height: 230px;
+				height: 160px;
 				border: 3px solid gray;
 				border-left: none;
 				display: inline-block;
 				vertical-align: middle;
 			}
+			.gamburger {
+				margin-left: 70px;
+			}
 		</style>
 	</section>
 
-	<section class="slide postcss-vs-other">
+	<section class="slide postcss-vs-other black">
 		<h2>Что же выбрать?</h2>
 		<img src="pictures/choice.jpg" alt="" class="cover h">
 		<style>
