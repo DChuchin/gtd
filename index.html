@@ -5,23 +5,48 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-4x3.css">
+	<link rel="stylesheet" href="node_modules/shower-material/styles/screen-16x10.css">
 	<style>
+    .caption {
+      background: #1f40ce linear-gradient(135deg, #1f40ce 50%, #1431c2 50%);
+    }
 		.slide::after {
 			padding-top: 0;
 			top: 35px;
-			background: cyan;
+      right: 35px;
+      left: auto;
+			background: url('pictures/drop.svg');
 			border-radius: 50%;
-			height: 50px;
+			height: 80px;
+      width: 80px;
+      text-align: center;
+      color: #ffffff;
+      padding-top: 20px;
 		}
-		.slide::before {
-			position: absolute;
-			top: -5px;
-			right: 105px;
-			border: 20px solid transparent;
-			border-bottom: 30px solid cyan;
-			content: '';
+		.slide {
+		  border: 20px solid #1f40ce;
+      border-radius: 5px;
 		}
+    .progress {
+      background: #19fea0;
+      box-shadow: none;
+    }
+    .slide h2 {
+      font-size: 64px;
+      color:#1f40ce;
+      text-align: center;
+      font-weight: 900;
+    }
+    .slide h2:after {
+      display: block;
+      margin: 20px auto;
+      content: '';
+      width: 50px;
+      border-top: 4px solid #1f40ce;
+    }
+    .slide h3 {
+      font-size: 40px;
+    }
 	</style>
 </head>
 <body class="shower list">
@@ -45,23 +70,31 @@
 	</section>
 
 	<section class="slide">
-		<h2>1. Организация кода</h2>
+		<h3>1. Организация кода</h3>
 	</section>
 
 	<section class="slide">
-		<h2>2. Переменные</h2>
+		<h3>2. Переменные</h3>
+    
+    <style>
+      .highlight {
+        background-color: #f8f8f8;
+        box-shadow: 0 0 2px 0 gray;
+        font-size: 18px;
+      }
+    </style>
 	</section>
 
 	<section class="slide">
-		<h2>3. Примеси</h2>
+		<h3>3. Примеси</h3>
 	</section>
 
 	<section class="slide">
-		<h2>4. Nesting</h2>
+		<h3>4. Nesting</h3>
 	</section>
 
 	<section class="slide">
-		<h2>5. </h2>
+		<h3>5. </h3>
 	</section>
 
 	<section class="slide">
