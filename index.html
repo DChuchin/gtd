@@ -1,150 +1,88 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru"></html>
 <head>
-	<title>Theming Drupal 8</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-4x3.css">
-	<style>
-		.slide::after {
-			padding-top: 0;
-			top: 35px;
-			background: cyan;
-			border-radius: 50%;
-			height: 50px;
-		}
-		.slide::before {
-			position: absolute;
-			top: -5px;
-			right: 105px;
-			border: 20px solid transparent;
-			border-bottom: 30px solid cyan;
-			content: '';
-		}
-	</style>
+  <title>Theming Drupal 8</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="shower/themes/material/styles/screen-4x3.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="shower list">
-
-	<header class="caption">
-		<h1>Темизаия Drupal 8</h1>
-		<p></p>
-	</header>
-
-	<section class="slide">
-		<h2>
-			Препроцессоры
-		</h2>
-		<img src="pictures/preprocessors.png" class="place" alt="">
-	</section>
-
-	<section class="slide">
-		<h2 class="place">
-			Зачем?
-		</h2>
-	</section>
-
-	<section class="slide">
-		<h2>1. Организация кода</h2>
-	</section>
-
-	<section class="slide">
-		<h2>2. Переменные</h2>
-	</section>
-
-	<section class="slide">
-		<h2>3. Примеси</h2>
-	</section>
-
-	<section class="slide">
-		<h2>4. Nesting</h2>
-	</section>
-
-	<section class="slide">
-		<h2>5. </h2>
-	</section>
-
-	<section class="slide">
-		<img src="pictures/postcss-logo.png" alt="" class="place">
-	</section>
-
-	<section class="slide">
-		<h2>Как работает postCSS</h2>
-		<img src="pictures/gamburger.png" widht="auto" height="500" alt="" class="left bottom">
-		<ul id="postcss-list">
-			<li>Парсер</li>
-			<li id="middle">Плагины</li>
-			<li>Генератор</li>
-		</ul>
-		<style>
-			#postcss-list {
-				float: right;
-				width: 250px;
-				margin-top: 35px;
-				font-size: 40px;
-			}
-			#postcss-list li {
-				margin-bottom: 20px;
-			}
-			#postcss-list li::before {
-				vertical-align: middle;
-				content: '';
-				padding: 0;
-				border-bottom: 3px solid gray;
-				margin-right: 30px;
-			}
-			#middle::before {
-				content: '';
-				height: 230px;
-				border: 3px solid gray;
-				border-left: none;
-				display: inline-block;
-				vertical-align: middle;
-			}
-		</style>
-	</section>
-
-	<section class="slide postcss-vs-other">
-		<h2>Что же выбрать?</h2>
-		<img src="pictures/choice.jpg" alt="" class="cover h">
-		<style>
-			.postcss-vs-other {
-				padding-top: 40px;
-			}
-			.postcss-vs-other h2 {
-				color: white;
-				text-align: center;
-				font-size: 82px;
-			}
-
-		</style>
-	</section>
-
-	<section class="slide">
-		<h2>Дайте два!</h2>
-		<img src="pictures/mem.jpg" width="500" alt="" class="place">
-	</section>
-
-	<section class="slide">
-		<h2>Как скомпилировать </h2>
-	</section>
-
-	<section class="slide">
-		<h2>Gulp + Sass + postCSS</h2>
-	</section>
-
-	<section class="slide">
-		<h2>NPM</h2>
-	</section>
-
-	<footer class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</footer>
-
-	<div class="progress"></div>
-
-	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
-
+  <header class="caption">
+    <h1>Темизаия Drupal 8</h1>
+  </header>
+  <section class="slide">
+    <h2>Вступление</h2>
+  </section>
+  <section class="slide black" id="css-power">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <svg viewbox="0 0 800 600">
+      <symbol id="s-text">
+        <text class="text--line" text-anchor="middle" x="50%" y="35%">Возможности</text>
+        <text class="text--line2" text-anchor="middle" x="50%" y="68%">CSS</text>
+      </symbol>
+      <g class="g-ants">
+        <use class="text-copy" xlink:href="#s-text"></use>
+        <use class="text-copy" xlink:href="#s-text"></use>
+        <use class="text-copy" xlink:href="#s-text"></use>
+        <use class="text-copy" xlink:href="#s-text"></use>
+        <use class="text-copy" xlink:href="#s-text"></use>
+      </g>
+    </svg>
+  </section>
+  <section class="slide white" id="bb-8">
+    <div class="background">
+      <div class="body">
+        <div class="shadow"></div>
+        <div class="depth"></div>
+        <div class="inner"></div>
+        <div class="head">
+          <div class="head-shape"></div><img class="eye" src="http://id-devspace.co.uk/bb-8/img/eye.png" alt="">
+          <div class="antenna"></div>
+        </div>
+      </div>
+      <div class="sun"></div>
+      <div class="sand">
+        <div class="mountains"></div>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
+    <h2>Препроцессоры</h2><img class="place" src="pictures/preprocessors.png" width="80%" height="auto" alt="">
+  </section>
+  <section class="slide">
+    <div class="columns center">
+      <div class="column" style="font-size:16px; line-height:1;">
+        <pre><code>
+        base/
+        ├  _root.scss
+        ├  _normalize.scss
+        └ _typography.scss
+        
+        component/
+        ├  _buttons.scss
+        ├  _teaser.scss
+        ├  _teaser-list.scss
+        └  _menu.scss
+        
+        layout/
+        ├  _blog.scss
+        ├  _article.scss
+        └  _home.scss
+        
+        style.scss
+        </code></pre>
+      </div>
+      <div class="column">
+        <p><a href="https://smacss.com/"><img src="pictures/smacss.jpg" width="300"></a></p>
+        <p><a href="https://ru.bem.info/methodology/"><img src="pictures/bem.svg" width="300"></a></p>
+      </div>
+    </div>
+  </section>
+  <footer class="badge"></footer>
+  <div class="progress"></div>
+  <script src="shower/shower.min.js"></script>
 </body>
-</html>
