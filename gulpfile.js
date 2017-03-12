@@ -8,6 +8,10 @@ const rsync = require('gulp-rsync');
 const sequence = require('run-sequence');
 const zip = require('gulp-zip');
 const pages = require('gulp-gh-pages');
+const pug = require('gulp-pug');
+const sass = require('gulp-sass');
+const sync = require('browser-sync').create();
+const plumber = require('gulp-plumber');
 
 gulp.task('prepare', () => {
 
@@ -20,7 +24,8 @@ gulp.task('prepare', () => {
 			'!LICENSE.md',
 			'!README.md',
 			'!gulpfile.js',
-			'!package.json'
+			'!package.json',
+			'!src'
 		])
 		.pipe(replace(
 			/(<link rel="stylesheet" href=")(node_modules\/shower-)([^\/]*)\/(.*\.css">)/g,
@@ -90,6 +95,8 @@ gulp.task('archive', (callback) => {
 
 gulp.task('publish', (callback) => {
 	sequence(
+		'pug',
+		'sass',
 		'prepare',
 		'upload',
 		'clean', callback
@@ -100,4 +107,39 @@ gulp.task('clean', () => {
 	return del('prepared/**');
 });
 
-gulp.task('default', ['prepare']);
+gulp.task('pug', ()=> {
+	return gulp.src('./src/pug/index.pug')
+		.pipe(plumber())
+		.pipe(pug({
+			pretty: true
+		}))
+		.pipe(gulp.dest('.'))
+});
+
+gulp.task('sass', () => {
+	return gulp.src('./src/styles/main.scss')
+		.pipe(plumber())
+		.pipe(sass())
+		.pipe(gulp.dest('./css/'))
+});
+
+gulp.task('serve', function () {
+
+  // Serve files from the root of this project
+  sync.init({
+    server: {
+      baseDir: "./"
+    }
+  });
+});
+
+gulp.task('watch', function () {
+  gulp
+		.watch('./src/styles/**/*.scss', ['sass'])
+		.on('change', sync.reload);
+	gulp
+		.watch('./src/pug/**/*.pug', ['pug'])
+		.on('change', sync.reload);
+});
+
+gulp.task('default', ['sass','pug','serve', 'watch']);
