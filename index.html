@@ -51,11 +51,20 @@
     </div>
   </section>
   <section class="slide">
-    <h2>Препроцессоры</h2><img class="place" src="pictures/preprocessors.png" width="80%" height="auto" alt="">
+    <h2>Препроцессоры</h2><img class="place" src="pictures/preprocessors.jpg" width="80%" height="auto" alt="">
+  </section>
+  <section class="slide black" id="preproc-how-to">
+    <h3>Что такое препроцессоры</h3><img class="place" src="../pictures/scss-to-css.png" width="80%">
   </section>
   <section class="slide">
-    <div class="columns center">
-      <div class="column" style="font-size:16px; line-height:1;">
+    <h2>Зачем?</h2>
+  </section>
+  <section class="slide" id="architecture">
+    <h3>Организация кода</h3><img class="place" src="pictures/architecture.jpg" width="70%">
+  </section>
+  <section class="slide">
+    <div class="columns">
+      <div class="col">
         <pre><code>
         base/
         ├  _root.scss
@@ -76,11 +85,149 @@
         style.scss
         </code></pre>
       </div>
-      <div class="column">
-        <p><a href="https://smacss.com/"><img src="pictures/smacss.jpg" width="300"></a></p>
-        <p><a href="https://ru.bem.info/methodology/"><img src="pictures/bem.svg" width="300"></a></p>
+      <div class="col">
+        <pre><code>
+        <span class="comment">// base</span>
+        <span class="import">@import</span> _root;
+        <span class="import">@import</span> _normalize;
+        <span class="import">@import</span> _typography;
+        
+        <span class="comment">// layout</span>
+        <span class="import">@import</span> _blog;
+        <span class="import">@import</span> _article;
+        <span class="import">@import</span> _home;
+        
+        <span class="comment">// components</span>
+        <span class="import">@import</span> _buttons;
+        <span class="import">@import</span> _teaser;
+        <span class="import">@import</span> _teaser-list;
+        <span class="import">@import</span> _menu;
+        </code></pre>
       </div>
     </div>
+  </section>
+  <section class="slide">
+    <h3>Переменные</h3>
+    <div class="columns code">
+      <div class="col">
+        <h3>SCSS</h3>
+      </div>
+      <div class="col next">
+        <h3>CSS</h3>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
+    <h3>Примеси</h3>
+    <div class="columns code">
+      <div class="col">
+        <h3>SCSS</h3>
+      </div>
+      <div class="col next">
+        <h3>CSS</h3>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
+    <h3>Вложенности</h3>
+    <div class="columns code">
+      <div class="col">
+        <h3>SCSS</h3>
+      </div>
+      <div class="col next">
+        <h3>CSS</h3>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
+    <h3>Цветовые функции</h3>
+    <div class="columns code">
+      <div class="col">
+        <h3>SCSS</h3>
+      </div>
+      <div class="col next">
+        <h3>CSS</h3>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
+    <h3>Математические операции</h3>
+    <div class="columns code">
+      <div class="col">
+        <h3>SCSS</h3>
+      </div>
+      <div class="col next">
+        <h3>CSS</h3>
+      </div>
+    </div>
+  </section>
+  <section class="slide">
+    <h3>Наследование</h3>
+    <div class="columns code">
+      <div class="col">
+        <h3>SCSS</h3>
+      </div>
+      <div class="col next">
+        <h3>CSS</h3>
+      </div>
+    </div>
+  </section>
+  <section class="slide"><img class="place" src="pictures/postcss-logo.png" width="100%"></section>
+  <section class="slide">
+    <h3>Плагины</h3>
+  </section>
+  <section class="slide">
+    <h3>Как работает PostCSS</h3>
+    <div class="columns">
+      <div class="col"><img src="pictures/gamburger.png" width="450"></div>
+      <div class="col next">
+        <ul id="postcss-list">
+          <li>Парсер</li>
+          <li class="next" id="middle">Плагины</li>
+          <li>Генератор</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="slide black">
+    <h2>Что же выбрать?</h2><img class="cover h" src="pictures/choice.jpg" alt="">
+  </section>
+  <section class="slide black"><img class="cover h" src="pictures/postcssvs.jpg" alt=""></section>
+  <section class="slide">
+    <h2>Незачем выбирать</h2>
+  </section>
+  <section class="slide" id="use">
+    <h3>Как использовать?</h3>
+  </section>
+  <section class="slide"><img class="place" src="pictures/nodejs-npm.png" width="50%"></section>
+  <section class="slide">
+    <h3>Установка на примере stylus</h3>
+  </section>
+  <section class="slide"><img class="place" src="pictures/gulp-grunt.png" width="60%"><img class="next cover" src="pictures/webpack.jpg" width="80%" style="z-index:1;"></section>
+  <section class="slide">
+    <h3>Приложения</h3>
+    <ol class="list-feature">
+      <li><a href="https://codekitapp.com/">CodeKit</a></li>
+      <li><a href="">Compass.app</a></li>
+      <li><a href="">Ghostlab</a></li>
+      <li><a href="">Koala</a></li>
+      <li><a href="">LiveReload</a></li>
+      <li><a href="">Prepros</a></li>
+      <li><a href="">Scout</a></li>
+    </ol>
+  </section>
+  <section class="slide">
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li> </li>
+    </ol>
+  </section>
+  <section class="slide" id="adci"><a href=""><img class="place" src="pictures/adci.svg" width="50%"></a></section>
+  <section class="slide">
+    <h2>Спасибо за внимание</h2>
   </section>
   <footer class="badge"></footer>
   <div class="progress"></div>

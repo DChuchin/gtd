@@ -1,6 +1,6 @@
 section.slide
-  .columns.center
-    .column(style="font-size:16px; line-height:1")
+  .columns
+    .col
       | <pre><code>
       |base/
       |├  _root.scss
@@ -20,10 +20,21 @@ section.slide
       |
       |style.scss
       |</code></pre>
-    .column
-      p
-        a(href="https://smacss.com/")
-          img(src="pictures/smacss.jpg" width="300")
-      p
-        a(href="https://ru.bem.info/methodology/")
-          img(src="pictures/bem.svg" width="300")
+    .col
+      | <pre><code>
+      |<span class="comment">// base</span>
+      |<span class="import">@import</span> _root;
+      |<span class="import">@import</span> _normalize;
+      |<span class="import">@import</span> _typography;
+      |
+      |<span class="comment">// layout</span>
+      |<span class="import">@import</span> _blog;
+      |<span class="import">@import</span> _article;
+      |<span class="import">@import</span> _home;
+      |
+      |<span class="comment">// components</span>
+      |<span class="import">@import</span> _buttons;
+      |<span class="import">@import</span> _teaser;
+      |<span class="import">@import</span> _teaser-list;
+      |<span class="import">@import</span> _menu;
+      |</code></pre>
