@@ -3,6 +3,14 @@ body {
   font-size: 16px;
   line-height: 1.2; }
 
+code {
+  font-size: 16px; }
+  code .comment {
+    font-style: italic;
+    color: gray; }
+  code .import {
+    color: #1f40ce; }
+
 .caption {
   background: #1f40ce linear-gradient(135deg, #1f40ce 50%, #1431c2 50%); }
 
@@ -27,7 +35,7 @@ body {
   font-family: "Arial", sans-serif;
   border: 20px solid #1f40ce;
   border-radius: 5px;
-  padding: 60px 30px 0; }
+  padding: 60px 60px 0; }
 
 .progress {
   background: #19fea0;
@@ -49,7 +57,10 @@ body {
 
 .slide h3 {
   font-size: 40px;
-  color: darkgray; }
+  color: #24292e; }
+
+.black h3 {
+  color: white; }
 
 .columns {
   display: flex;
@@ -62,6 +73,9 @@ body {
   width: 50%;
   padding: 30px;
   flex: 1 0 50%; }
+  .col h3 {
+    background: rgba(25, 254, 160, 0.5);
+    padding: 5px 15px; }
 
 #css-power {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -350,3 +364,27 @@ body {
     transform: translateX(-5px); }
   100% {
     transform: translateX(0); } }
+
+#postcss-list {
+  float: right;
+  width: 350px;
+  margin-top: 30px;
+  font-size: 40px; }
+
+#postcss-list li {
+  margin-bottom: 20px; }
+
+#postcss-list li::before {
+  vertical-align: middle;
+  content: '';
+  padding: 0;
+  border-bottom: 3px solid gray;
+  margin-right: 30px; }
+
+#middle::before {
+  content: '';
+  height: 200px;
+  border: 3px solid gray;
+  border-left: none;
+  display: inline-block;
+  vertical-align: middle; }
