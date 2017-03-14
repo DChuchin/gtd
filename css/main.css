@@ -3,8 +3,14 @@ body {
   font-size: 16px;
   line-height: 1.2; }
 
+pre.hightlight {
+  background: rgba(31, 64, 206, 0.2);
+  border-radius: 5px;
+  margin-top: 10px; }
+
 code {
-  font-size: 16px; }
+  font-size: 14px;
+  line-height: 1; }
   code .comment {
     font-style: italic;
     color: gray; }
@@ -36,6 +42,8 @@ code {
   border: 20px solid #1f40ce;
   border-radius: 5px;
   padding: 60px 60px 0; }
+  .slide.full {
+    padding: 30px 60px; }
 
 .progress {
   background: #19fea0;
@@ -71,11 +79,13 @@ code {
 
 .col {
   width: 50%;
-  padding: 30px;
+  padding: 0 30px;
   flex: 1 0 50%; }
   .col h3 {
     background: rgba(25, 254, 160, 0.5);
-    padding: 5px 15px; }
+    padding: 5px 15px;
+    font-size: 24px;
+    border-radius: 5px; }
 
 #css-power {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -95,7 +105,7 @@ code {
     stroke: white;
     stroke-dasharray: 7% 28%;
     stroke-width: 3px;
-    animation: stroke-offset 9s ease-in-out; }
+    animation: stroke-offset infinite 9s ease-in-out; }
     #css-power .text-copy:nth-child(1) {
       stroke: #360745;
       stroke-dashoffset: 7%; }
