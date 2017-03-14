@@ -1,0 +1,42 @@
+section.slide
+  h3
+    | Наследование
+  .columns.code
+    .col
+      h3
+        | SCSS
+      |<pre class="hightlight"><code>
+      |.message {
+      |  border: 1px solid #ccc;
+      |  padding: 10px;
+      |  color: #333;
+      |}
+      |
+      |.success {
+      |  @extend .message;
+      |  border-color: green;
+      |}
+      |
+      |.error {
+      |  @extend .message;
+      |  border-color: red;
+      |}
+      |</code></pre>
+    .col
+      h3
+        | CSS
+      |<pre class="hightlight"><code>
+      |.message, .success, .error, .warning {
+      |  border: 1px solid #cccccc;
+      |  padding: 10px;
+      |  color: #333;
+      |}
+      |
+      |.success {
+      |  border-color: green;
+      |}
+      |
+      |.error {
+      |  border-color: red;
+      |}
+      |</code></pre>

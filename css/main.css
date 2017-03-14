@@ -3,6 +3,20 @@ body {
   font-size: 16px;
   line-height: 1.2; }
 
+pre.hightlight {
+  background: rgba(31, 64, 206, 0.2);
+  border-radius: 5px;
+  margin-top: 10px; }
+
+code {
+  font-size: 14px;
+  line-height: 1; }
+  code .comment {
+    font-style: italic;
+    color: gray; }
+  code .import {
+    color: #1f40ce; }
+
 .caption {
   background: #1f40ce linear-gradient(135deg, #1f40ce 50%, #1431c2 50%); }
 
@@ -27,7 +41,9 @@ body {
   font-family: "Arial", sans-serif;
   border: 20px solid #1f40ce;
   border-radius: 5px;
-  padding: 60px 30px 0; }
+  padding: 60px 60px 0; }
+  .slide.full {
+    padding: 30px 60px; }
 
 .progress {
   background: #19fea0;
@@ -49,7 +65,10 @@ body {
 
 .slide h3 {
   font-size: 40px;
-  color: darkgray; }
+  color: #24292e; }
+
+.black h3 {
+  color: white; }
 
 .columns {
   display: flex;
@@ -60,8 +79,13 @@ body {
 
 .col {
   width: 50%;
-  padding: 30px;
+  padding: 0 30px;
   flex: 1 0 50%; }
+  .col h3 {
+    background: rgba(25, 254, 160, 0.5);
+    padding: 5px 15px;
+    font-size: 24px;
+    border-radius: 5px; }
 
 #css-power {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -81,7 +105,7 @@ body {
     stroke: white;
     stroke-dasharray: 7% 28%;
     stroke-width: 3px;
-    animation: stroke-offset 9s ease-in-out; }
+    animation: stroke-offset infinite 9s ease-in-out; }
     #css-power .text-copy:nth-child(1) {
       stroke: #360745;
       stroke-dashoffset: 7%; }
@@ -350,3 +374,27 @@ body {
     transform: translateX(-5px); }
   100% {
     transform: translateX(0); } }
+
+#postcss-list {
+  float: right;
+  width: 350px;
+  margin-top: 30px;
+  font-size: 40px; }
+
+#postcss-list li {
+  margin-bottom: 20px; }
+
+#postcss-list li::before {
+  vertical-align: middle;
+  content: '';
+  padding: 0;
+  border-bottom: 3px solid gray;
+  margin-right: 30px; }
+
+#middle::before {
+  content: '';
+  height: 200px;
+  border: 3px solid gray;
+  border-left: none;
+  display: inline-block;
+  vertical-align: middle; }

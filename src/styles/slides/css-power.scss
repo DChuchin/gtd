@@ -27,7 +27,7 @@
     stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
     stroke-width: 3px;
 
-    animation: stroke-offset 9s ease-in-out;
+    animation: stroke-offset infinite 9s ease-in-out;
 
     @for $item from 1 through $max {
       $stroke-color: nth($colors, $item);
