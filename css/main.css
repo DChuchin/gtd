@@ -16,6 +16,11 @@ code {
     color: gray; }
   code .import {
     color: #1f40ce; }
+  code .selector {
+    color: #8f0334; }
+  code .extend,
+  code .mixin {
+    color: purple; }
 
 .caption {
   background: #1f40ce linear-gradient(135deg, #1f40ce 50%, #1431c2 50%); }

@@ -20,6 +20,13 @@ code {
   .import {
     color: $blue;
   }
+  .selector {
+    color: rgb(143, 3, 52);
+  }
+  .extend,
+  .mixin {
+    color: purple;
+  }
 }
 .caption {
   background: $blue linear-gradient(135deg, $blue 50%, $blue-dark 50%);

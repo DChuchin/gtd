@@ -37,6 +37,7 @@
     "fs": "0.0.2",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^3.1.1",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",

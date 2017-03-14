@@ -12,6 +12,7 @@ const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const sync = require('browser-sync').create();
 const plumber = require('gulp-plumber');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('prepare', () => {
 
@@ -105,6 +106,12 @@ gulp.task('publish', (callback) => {
 
 gulp.task('clean', () => {
 	return del('prepared/**');
+});
+
+gulp.task('image', ()=> {
+	return gulp.src('./src/pictures/**/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('./pictures'))
 });
 
 gulp.task('pug', ()=> {
