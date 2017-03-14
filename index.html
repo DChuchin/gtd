@@ -66,17 +66,17 @@
         <h3>SCSS</h3>
         <pre class="hightlight"><code>
         <span class="comment">// _reset.scss</span>
-
+        
         <span>ul,</span>
         <span>ol</span> {
         <span class="key">  margin:</span> 0;
         <span class="key">  padding</span> 0;
         }
-
+        
         <span class="comment">// base.scss</span>
-
+        
         <span class="import">@import</span> '_reset';
-
+        
         <span>body</span>{
         <span class="key">font:</span> 100% Helvetica, sans-serif;
         <span class="key">background-color:</span> #efefef;
@@ -86,12 +86,12 @@
       <div class="col">
         <h3>CSS</h3>
         <pre class="hightlight"><code>
-
+        
         <span>ul, ol</span> {
         <span class="key">  margin:</span> 0;
         <span class="key">  padding</span> 0;
         }
-
+        
         <span>body</span> {
         <span class="key">font:</span> 100% Helvetica, sans-serif;
         <span class="key">background-color:</span> #efefef;
@@ -100,7 +100,7 @@
       </div>
     </div>
   </section>
-  <section class="slide" id="architecture"><img class="place" src="pictures/import.jpg" width="70%"></section>
+  <section class="slide" id="architecture"><img class="place" src="pictures/architecture.jpg" width="70%"></section>
   <section class="slide">
     <div class="columns">
       <div class="col">
@@ -109,18 +109,18 @@
         ├  _root.scss
         ├  _normalize.scss
         └  _typography.scss
-
+        
         component/
         ├  _buttons.scss
         ├  _teaser.scss
         ├  _teaser-list.scss
         └  _menu.scss
-
+        
         layout/
         ├  _blog.scss
         ├  _article.scss
         └  _home.scss
-
+        
         style.scss
         </code></pre>
       </div>
@@ -130,12 +130,12 @@
         <span class="import">@import</span> _root;
         <span class="import">@import</span> _normalize;
         <span class="import">@import</span> _typography;
-
+        
         <span class="comment">// layout</span>
         <span class="import">@import</span> _blog;
         <span class="import">@import</span> _article;
         <span class="import">@import</span> _home;
-
+        
         <span class="comment">// components</span>
         <span class="import">@import</span> _buttons;
         <span class="import">@import</span> _teaser;
@@ -153,7 +153,7 @@
         <pre class="hightlight"><code>
         <span>$font-stack:</span> <span>Helvetica, sans-serif;</span>
         <span>$primary-color:</span> #333;
-
+        
         <span>body</span>{
         <span class="key">font:</span> $font-stack;
         <span class="key">background-color:</span> $primary-color;
@@ -163,7 +163,7 @@
       <div class="col">
         <h3>CSS</h3>
         <pre class="hightlight"><code>
-
+        
         <span>body</span> {
         <span class="key">font:</span> 100% Helvetica, sans-serif;
         <span class="key">background-color:</span> #efefef;
@@ -184,7 +184,7 @@
              -ms-border-radius: $radius;
                  border-radius: $radius;
         }
-
+        
         .box {
          @include border-radius(10px);
         }
@@ -215,9 +215,9 @@
            padding: 0;
            list-style: none;
          }
-
+        
          li { display: inline-block; }
-
+        
          a {
            display: block;
            padding: 6px 12px;
@@ -234,11 +234,11 @@
          padding: 0;
          list-style: none;
         }
-
+        
         nav li {
          display: inline-block;
         }
-
+        
         nav a {
          display: block;
          padding: 6px 12px;
@@ -266,12 +266,12 @@
         <h3>SCSS</h3>
         <pre class="hightlight"><code>
         .container { width: 100%; }
-
+        
         article[role="main"] {
          float: left;
          width: 600px / 960px * 100%;
         }
-
+        
         aside[role="complementary"] {
          float: right;
          width: 300px / 960px * 100%;
@@ -284,12 +284,12 @@
         .container {
          width: 100%;
         }
-
+        
         article[role="main"] {
          float: left;
          width: 62.5%;
         }
-
+        
         aside[role="complementary"] {
          float: right;
          width: 31.25%;
@@ -309,12 +309,12 @@
          padding: 10px;
          color: #333;
         }
-
+        
         .success {
          @extend .message;
          border-color: green;
         }
-
+        
         .error {
          @extend .message;
          border-color: red;
@@ -329,11 +329,11 @@
          padding: 10px;
          color: #333;
         }
-
+        
         .success {
          border-color: green;
         }
-
+        
         .error {
          border-color: red;
         }
