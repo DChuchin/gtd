@@ -16,6 +16,11 @@ code {
     color: gray; }
   code .import {
     color: #1f40ce; }
+  code .selector {
+    color: #8f0334; }
+  code .extend,
+  code .mixin {
+    color: purple; }
 
 .caption {
   background: #1f40ce linear-gradient(135deg, #1f40ce 50%, #1431c2 50%); }
@@ -44,6 +49,18 @@ code {
   padding: 60px 60px 0; }
   .slide.full {
     padding: 30px 60px; }
+  .slide.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .slide.wide {
+    border: none; }
+  .slide.clear {
+    border: none;
+    padding: 0; }
+    .slide.clear:after {
+      opacity: 0; }
 
 .progress {
   background: #19fea0;
@@ -87,13 +104,53 @@ code {
     font-size: 24px;
     border-radius: 5px; }
 
+#postcsssass {
+  background: #e42829; }
+
+#stylus h3 {
+  margin-bottom: 30px; }
+
+.terminal {
+  padding: 10px 20px;
+  background-color: gray;
+  border-left: 3px solid #19fea0;
+  margin-bottom: 30px;
+  text-indent: 0; }
+
+#adci > a {
+  text-align: center; }
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+#bootstrap {
+  padding-top: 100px; }
+  #bootstrap h2 {
+    margin-bottom: 50px; }
+  #bootstrap a {
+    background: none;
+    text-align: center;
+    border-bottom: none; }
+  #bootstrap img {
+    display: block; }
+
+#drupal .grid {
+  flex-wrap: wrap;
+  align-items: flex-start; }
+
+#drupal a {
+  background: none;
+  margin-bottom: 40px; }
+
 #css-power {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   padding: 0;
   border: none;
   font: 16em/1 "Arial", sans-serif; }
   #css-power:after {
-    display: none; }
+    opacity: 0; }
   #css-power .text--line {
     font-size: .5em; }
   #css-power svg {
@@ -398,3 +455,6 @@ code {
   border-left: none;
   display: inline-block;
   vertical-align: middle; }
+
+#intro h2 {
+  font-size: 100px; }

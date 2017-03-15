@@ -8,40 +8,40 @@
 |        SCSS
 |      </h3>    
 |<pre class="hightlight"><code>
-|.message {
-|  border: 1px solid #ccc;
-|  padding: 10px;
-|  color: #333;
+|<span class="selector">.message</span> {
+|    border: 1px solid #ccc;
+|    padding: 10px;
+|    color: #333;
 |}
 |
-|.success {
-|  @extend .message;
-|  border-color: green;
+|<span class="selector">.success</span> {
+|    <span class="extend">@extend .message;</span>
+|    border-color: green;
 |}
 |
-|.error {
-|  @extend .message;
-|  border-color: red;
+|<span class="selector">.error</span> {
+|    <span class="extend">@extend .message;</span>
+|    border-color: red;
 |}
 |</code></pre>
 |</div>
 |  <div class="col">
 |    <h3>
-|      SCSS
+|      CSS
 |    </h3>
-||<pre class="hightlight"><code>
-|.message, .success, .error, .warning {
-|  border: 1px solid #cccccc;
-|  padding: 10px;
-|  color: #333;
+|<pre class="hightlight"><code>
+|<span class="selector">.message</span>, <span class="selector">.success</span>, <span class="selector">.error</span>{
+|    border: 1px solid #cccccc;
+|    padding: 10px;
+|    color: #333;
 |}
 |
-|.success {
-|  border-color: green;
+|<span class="selector">.success</span> {
+|    border-color: green;
 |}
 |
-|.error {
-|  border-color: red;
+|<span class="selector">.error</span> {
+|    border-color: red;
 |}
 |</code></pre>
 |</div>

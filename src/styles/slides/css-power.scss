@@ -4,7 +4,7 @@
   border: none;
   font: 16em/1 $arial;
   &:after {
-    display: none;
+    opacity: 0;
   }
 
   $colors: #360745, #D61C59, #E7D84B, #EFEAC5, #1B8798;

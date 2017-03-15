@@ -12,154 +12,25 @@
   <header class="caption">
     <h1>Темизаия Drupal 8</h1>
   </header>
-  <section class="slide">
-    <h2>Вступление</h2>
+  <section class="slide center" id="intro">
+    <h2>Frontend, part 2</h2>
+    <h3>Дима Чучин, ADCI solutions </h3>
   </section>
-  <section class="slide black" id="css-power">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-    <svg viewbox="0 0 800 600">
-      <symbol id="s-text">
-        <text class="text--line" text-anchor="middle" x="50%" y="35%">Возможности</text>
-        <text class="text--line2" text-anchor="middle" x="50%" y="68%">CSS</text>
-      </symbol>
-      <g class="g-ants">
-        <use class="text-copy" xlink:href="#s-text"></use>
-        <use class="text-copy" xlink:href="#s-text"></use>
-        <use class="text-copy" xlink:href="#s-text"></use>
-        <use class="text-copy" xlink:href="#s-text"></use>
-        <use class="text-copy" xlink:href="#s-text"></use>
-      </g>
-    </svg>
-  </section>
-  <section class="slide white" id="bb-8">
-    <div class="background">
-      <div class="body">
-        <div class="shadow"></div>
-        <div class="depth"></div>
-        <div class="inner"></div>
-        <div class="head">
-          <div class="head-shape"></div><img class="eye" src="http://id-devspace.co.uk/bb-8/img/eye.png" alt="">
-          <div class="antenna"></div>
-        </div>
-      </div>
-      <div class="sun"></div>
-      <div class="sand">
-        <div class="mountains"></div>
-      </div>
-    </div>
+  <section class="slide wide white"><img class="cover h" src="pictures/oldsite.jpg"></section>
+  <section class="slide clear"><img class="cover h" src="pictures/site2010.jpg"></section>
+  <section class="slide clear">
+    <video class="video-item vsc-initialized" height="100%" width="100%" poster="https://assets.awwwards.com/awards/external/2017/02/awwwards-basicagency-project-page_static.jpeg" autoplay="true" loop="" data-vscid="7fwak7elq">
+      <source src="https://assets.awwwards.com/awards/external/2017/02/awwwards-basicagency-project-page.mp4" type="video/mp4">
+    </video>
   </section>
   <section class="slide">
     <h2>Препроцессоры</h2><img class="place" src="pictures/preprocessors.jpg" width="80%" height="auto" alt="">
   </section>
   <section class="slide black" id="preproc-how-to">
-    <h3>Как работает препроцессор</h3><img class="place" src="../pictures/scss-to-css.png" width="80%">
+    <h3>Как работает препроцессор</h3><img class="place" src="pictures/scss-to-css.png" width="80%">
   </section>
-  <section class="slide">
+  <section class="slide center">
     <h2>Зачем?</h2>
-  </section>
-  <section class="slide full">
-   <h3>
-      Импорт
-   </h3>
-   <div class="columns code">
-     <div class="col">
-       <h3>
-         SCSS
-       </h3>
-       
-  <pre class="hightlight"><code>
-  <span class="comment">// _reset.scss</span>
-  
-  <span>ul,</span>
-  <span>ol</span> {
-  <span class="key">  margin:</span> 0;
-  <span class="key">  padding</span> 0;
-  }
-  
-  <span class="comment">// base.scss</span>
-  
-  <span class="import">@import</span> '_reset';
-  
-  <span>body</span>{
-  <span class="key">font:</span> 100% Helvetica, sans-serif;
-  <span class="key">background-color:</span> #efefef;
-  }
-  </code></pre>
-  </div>
-   <div class="col">
-     <h3>
-       SCSS
-     </h3>
-  <pre class="hightlight"><code>
-  
-  <span>ul, ol</span> {
-  <span class="key">  margin:</span> 0;
-  <span class="key">  padding</span> 0;
-  }
-  
-  <span>body</span> {
-  <span class="key">font:</span> 100% Helvetica, sans-serif;
-  <span class="key">background-color:</span> #efefef;
-  }
-  </code></pre>
-  </div>
-  </div>
-  </section>
-  <section class="slide" id="architecture"><img class="place" src="pictures/architecture.jpg" width="70%"></section>
-  <section class="slide full">
-   <h3>
-      Миксиниы (примеси)
-   </h3>
-   <div class="columns code">
-     <div class="col">
-       <h3>
-         SCSS
-       </h3>
-  <pre class="hightlight"><code>
-  base/
-  ├  _root.scss
-  ├  _normalize.scss
-  └  _typography.scss
-  
-  component/
-  ├  _buttons.scss
-  ├  _teaser.scss
-  ├  _teaser-list.scss
-  └  _menu.scss
-  
-  layout/
-  ├  _blog.scss
-  ├  _article.scss
-  └  _home.scss
-  
-  style.scss
-  </code></pre>
-  </div>
-   <div class="col">
-     <h3>
-       SCSS
-     </h3>
-  <pre class="hightlight"><code>
-  <span class="comment">// base</span>
-  <span class="import">@import</span> _root;
-  <span class="import">@import</span> _normalize;
-  <span class="import">@import</span> _typography;
-  
-  <span class="comment">// layout</span>
-  <span class="import">@import</span> _blog;
-  <span class="import">@import</span> _article;
-  <span class="import">@import</span> _home;
-  
-  <span class="comment">// components</span>
-  <span class="import">@import</span> _buttons;
-  <span class="import">@import</span> _teaser;
-  <span class="import">@import</span> _teaser-list;
-  <span class="import">@import</span> _menu;
-  </code></pre>
-  </div>
-  </div>
   </section>
   <section class="slide full">
    <h3>
@@ -183,7 +54,7 @@
   </div>
    <div class="col">
      <h3>
-       SCSS
+       CSS
      </h3>
   <pre class="hightlight"><code>
   
@@ -197,44 +68,7 @@
   </section>
   <section class="slide full">
    <h3>
-      Миксиниы (примеси)
-   </h3>
-   <div class="columns code">
-     <div class="col">
-       <h3>
-         SCSS
-       </h3>
-  <pre class="hightlight"><code>
-  @mixin border-radius($radius) {
-   -webkit-border-radius: $radius;
-      -moz-border-radius: $radius;
-       -ms-border-radius: $radius;
-           border-radius: $radius;
-  }
-  
-  .box {
-   @include border-radius(10px);
-  }
-  </code></pre>
-  </div>
-   <div class="col">
-     <h3>
-       SCSS
-     </h3>
-  <pre class="hightlight"><code>
-  .box {
-   -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-       -ms-border-radius: 10px;
-           border-radius: 10px;
-  }
-  </code></pre>
-  </div>
-  </div>
-  </section>
-  <section class="slide full">
-   <h3>
-      Миксиниы (примеси)
+      Вложенность
    </h3>
    <div class="columns code">
      <div class="col">
@@ -243,41 +77,177 @@
        </h3>
   <pre class="hightlight"><code>
   nav {
-   ul {
-     margin: 0;
-     padding: 0;
-     list-style: none;
-   }
+     ul {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+     }
   
-   li { display: inline-block; }
+     li {
+         display: inline-block;
+     }
   
-   a {
-     display: block;
-     padding: 6px 12px;
-     text-decoration: none;
-   }
+     a {
+       display: block;
+       padding: 6px 12px;
+       text-decoration: none;
+     }
   }
   </code></pre>
   </div>
    <div class="col">
      <h3>
-       SCSS
+       CSS
      </h3>
   <pre class="hightlight"><code>
   nav ul {
-   margin: 0;
-   padding: 0;
-   list-style: none;
+     margin: 0;
+     padding: 0;
+     list-style: none;
   }
   
   nav li {
-   display: inline-block;
+     display: inline-block;
   }
   
   nav a {
-   display: block;
-   padding: 6px 12px;
-   text-decoration: none;
+     display: block;
+     padding: 6px 12px;
+     text-decoration: none;
+  }
+  </code></pre>
+  </div>
+  </div>
+  </section>
+  <section class="slide full">
+   <h3>
+      Миксины (примеси)
+   </h3>
+   <div class="columns code">
+     <div class="col">
+       <h3>
+         SCSS
+       </h3>
+  <pre class="hightlight"><code>
+  <span class="mixin">@mixin border-radius($radius)</span> {
+     -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+         -ms-border-radius: $radius;
+             border-radius: $radius;
+  }
+  
+  <span class="selector">.box</span> {
+     <span class="import">@include border-radius(10px)</span>;
+  }
+  </code></pre>
+  </div>
+   <div class="col">
+     <h3>
+       CSS
+     </h3>
+  <pre class="hightlight"><code>
+  <span class="selector">.box</span> {
+     -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+         -ms-border-radius: 10px;
+             border-radius: 10px;
+  }
+  </code></pre>
+  </div>
+  </div>
+  </section>
+  <section class="slide full">
+   <h3>
+      Импорт
+   </h3>
+   <div class="columns code">
+     <div class="col">
+       <h3>
+         SCSS
+       </h3>
+       
+  <pre class="hightlight"><code>
+  <span class="comment">// _reset.scss</span>
+  
+  <span>ul,</span>
+  <span>ol</span> {
+  <span class="key">    margin:</span> 0;
+  <span class="key">    padding</span> 0;
+  }
+  
+  <span class="comment">// base.scss</span>
+  
+  <span class="import">@import</span> '_reset';
+  
+  <span>body</span>{
+  <span class="key">    font:</span> 100% Helvetica, sans-serif;
+  <span class="key">    background-color:</span> #efefef;
+  }
+  </code></pre>
+  </div>
+   <div class="col">
+     <h3>
+       CSS
+     </h3>
+  <pre class="hightlight"><code>
+  
+  <span>ul, ol</span> {
+  <span class="key">    margin:</span> 0;
+  <span class="key">    padding</span> 0;
+  }
+  
+  <span>body</span> {
+  <span class="key">font:</span> 100% Helvetica, sans-serif;
+  <span class="key">background-color:</span> #efefef;
+  }
+  </code></pre>
+  </div>
+  </div>
+  </section>
+  <section class="slide full">
+   <h3>
+      Наследование
+   </h3>
+   <div class="columns code">
+     <div class="col">
+       <h3>
+         SCSS
+       </h3>    
+  <pre class="hightlight"><code>
+  <span class="selector">.message</span> {
+     border: 1px solid #ccc;
+     padding: 10px;
+     color: #333;
+  }
+  
+  <span class="selector">.success</span> {
+     <span class="extend">@extend .message;</span>
+     border-color: green;
+  }
+  
+  <span class="selector">.error</span> {
+     <span class="extend">@extend .message;</span>
+     border-color: red;
+  }
+  </code></pre>
+  </div>
+   <div class="col">
+     <h3>
+       CSS
+     </h3>
+  <pre class="hightlight"><code>
+  <span class="selector">.message</span>, <span class="selector">.success</span>, <span class="selector">.error</span>{
+     border: 1px solid #cccccc;
+     padding: 10px;
+     color: #333;
+  }
+  
+  <span class="selector">.success</span> {
+     border-color: green;
+  }
+  
+  <span class="selector">.error</span> {
+     border-color: red;
   }
   </code></pre>
   </div>
@@ -305,7 +275,7 @@
   </div>
    <div class="col">
      <h3>
-       SCSS
+       CSS
      </h3>
   <pre class="hightlight"><code>
   
@@ -328,94 +298,47 @@
        </h3>
        
   <pre class="hightlight"><code>
-  .container { width: 100%; }
-  
-  article[role="main"] {
-   float: left;
-   width: 600px / 960px * 100%;
+  <span class="selector">.container</span> {
+     width: 100%;
   }
   
-  aside[role="complementary"] {
-   float: right;
-   width: 300px / 960px * 100%;
+  <span class="selector">article[role="main"]</span> {
+     float: left;
+     width: 600px / 960px * 100%;
+  }
+  
+  <span class="selector">aside[role="complementary"]</span>  {
+     float: right;
+     width: 300px / 960px * 100%;
   }
   </code></pre>
   </div>
    <div class="col">
      <h3>
-       SCSS
+       CSS
      </h3>
   <pre class="hightlight"><code>
-  .container {
-   width: 100%;
+  <span class="selector">.container</span>  {
+     width: 100%;
   }
   
-  article[role="main"] {
-   float: left;
-   width: 62.5%;
+  <span class="selector">article[role="main"]</span>  {
+     float: left;
+     width: 62.5%;
   }
   
-  aside[role="complementary"] {
-   float: right;
-   width: 31.25%;
+  <span class="selector">aside[role="complementary"]</span>  {
+     float: right;
+     width: 31.25%;
   }
   </code></pre>
   </div>
   </div>
   </section>
-  <section class="slide full">
-   <h3>
-      Наследование
-   </h3>
-   <div class="columns code">
-     <div class="col">
-       <h3>
-         SCSS
-       </h3>    
-  <pre class="hightlight"><code>
-  .message {
-   border: 1px solid #ccc;
-   padding: 10px;
-   color: #333;
-  }
-  
-  .success {
-   @extend .message;
-   border-color: green;
-  }
-  
-  .error {
-   @extend .message;
-   border-color: red;
-  }
-  </code></pre>
-  </div>
-   <div class="col">
-     <h3>
-       SCSS
-     </h3>
-  |<pre class="hightlight"><code>
-  .message, .success, .error, .warning {
-   border: 1px solid #cccccc;
-   padding: 10px;
-   color: #333;
-  }
-  
-  .success {
-   border-color: green;
-  }
-  
-  .error {
-   border-color: red;
-  }
-  </code></pre>
-  </div>
-  </div>
+  <section class="slide center">
+    <h2>Незачем ждать!</h2>
   </section>
   <section class="slide"><img class="place" src="pictures/postcss-logo.png" width="100%"></section>
-  <section class="slide">
-    <h3>Плагины</h3>
-  </section>
   <section class="slide">
     <h3>Как работает PostCSS</h3>
     <div class="columns">
@@ -429,23 +352,25 @@
       </div>
     </div>
   </section>
-  <section class="slide black">
-    <h2>Что же выбрать?</h2><img class="cover h" src="pictures/choice.jpg" alt="">
+  <section class="slide center" id="plugins">
+    <h2>Плагины</h2>
+    <ul>
+      <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
+      <li class="next"><a href="https://github.com/cuth/postcss-pxtorem">Pxtorem</a></li>
+      <li class="next"><a href="https://github.com/jonathantneal/precss">Precss</a></li>
+      <li class="next"><a href="https://github.com/jonathantneal/oldie">Oldie</a></li>
+      <li class="next"><a href="https://github.com/stylelint/stylelint">Stylelint</a></li>
+      <li class="next"><a href="https://github.com/azat-io/postcss-instagram">Postcss-instagram</a></li>
+      <li class="next"><a href="https://github.com/Semigradsky/postcss-russian-stylesheets">Postcss-russian-stylesheets</a></li>
+    </ul>
   </section>
   <section class="slide black"><img class="cover h" src="pictures/postcssvs.jpg" alt=""></section>
-  <section class="slide">
-    <h2>Незачем выбирать</h2>
+  <section class="slide clear" id="postcsssass"><img class="cover w" src="pictures/postcsssass.jpg"></section>
+  <section class="slide center">
+    <h2>Использование</h2>
   </section>
-  <section class="slide" id="use">
-    <h3>Как использовать?</h3>
-  </section>
-  <section class="slide"><img class="place" src="pictures/nodejs-npm.png" width="50%"></section>
-  <section class="slide">
-    <h3>Установка на примере stylus</h3>
-  </section>
-  <section class="slide"><img class="place" src="pictures/gulp-grunt.png" width="60%"><img class="next cover" src="pictures/webpack.jpg" width="80%" style="z-index:1;"></section>
-  <section class="slide">
-    <h3>Приложения</h3>
+  <section class="slide center">
+    <h3>GUI программы</h3>
     <ol class="list-feature">
       <li><a href="https://codekitapp.com/">CodeKit</a></li>
       <li><a href="">Compass.app</a></li>
@@ -456,18 +381,43 @@
       <li><a href="">Scout</a></li>
     </ol>
   </section>
-  <section class="slide">
-    <h3>Boilerplates</h3>
+  <section class="slide"><img class="place" src="pictures/nodejs-npm.png" width="50%"></section>
+  <section class="slide" id="stylus">
+    <h3>Установка на примере stylus</h3>
     <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Ставим глобально npm-пакет stylus
+        <div class="terminal">$ npm install stylus -g</div>
+      </li>
+      <li class="next">Запускаем компиляцию файла
+        <div class="terminal">stylus -w style.styl -o style.css</div>
+      </li>
     </ol>
   </section>
-  <section class="slide" id="adci"><a href=""><img class="place" src="pictures/adci.svg" width="50%"></a></section>
   <section class="slide">
+    <h3>Сборщики</h3><img class="place bottom" src="pictures/gg-vs-webpack.png" width="100%">
+  </section>
+  <section class="slide center">
+    <h3>Стартовые наборы</h3>
+    <ol>
+      <li><a href="https://developers.google.com/web/tools/starter-kit/">Web Starter Kit</a></li>
+      <li><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+      <li><a href="https://github.com/tars/tars">TARS</a></li>
+      <li><a href="http://use-init.com/">INIT</a></li>
+      <li><a href="https://headstart.io/">Headstart</a></li>
+    </ol>
+  </section>
+  <section class="slide center" id="adci"><a href="https://github.com/ADCI/gulp-starter-kit"><img src="pictures/adci.svg" width="70%">
+      <h3>ADCI Starter Kit</h3></a></section>
+  <section class="slide" id="bootstrap">
+    <h2>Фреймворки</h2>
+    <div class="grid"><a href=""><img src="pictures/bootstrap.png" width="200px">Bootstrap</a><a href=""><img src="pictures/zurb.svg" width="200px">Zurb Foundation</a><a href=""><img src="pictures/materializecss.png" width="200px">Materialize</a></div>
+  </section>
+  <section class="slide" id="drupal">
+    <h2>Темы Drupal</h2>
+    <div class="grid"><a href=""><img src="pictures/zen-logo.png" width="200px"></a><a href=""><img src="pictures/adaptivethemes.png" width="200px"></a></div>
+    <div class="grid"><a href=""><img src="pictures/bootstrap_drupal.png" width="200px"></a><a href=""><img src="pictures/omega.png" width="200px"></a></div>
+  </section>
+  <section class="slide center">
     <h2>Спасибо за внимание</h2>
   </section>
   <footer class="badge"></footer>
