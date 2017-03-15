@@ -56,6 +56,22 @@ code {
   &.full {
     padding: 30px 60px;
   }
+  &.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &.wide {
+    border: none;
+  }
+  &.clear {
+    border: none;
+    padding: 0;
+    &:after {
+      opacity: 0;
+    }
+  }
 }
 .progress {
   background: $green;
@@ -99,5 +115,54 @@ code {
     padding: 5px 15px;
     font-size: 24px;
     border-radius: 5px;
+  }
+}
+#postcsssass {
+  background: $red;
+}
+#stylus {
+  h3 {
+    margin-bottom: 30px;
+  }
+}
+.terminal {
+  padding: 10px 20px;
+  background-color: gray;
+  border-left: 3px solid $green;
+  margin-bottom: 30px;
+  text-indent: 0;
+}
+#adci {
+  > a {
+    text-align: center;
+  }
+}
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#bootstrap {
+  padding-top: 100px;
+  h2 {
+    margin-bottom: 50px;
+  }
+  a {
+    background: none;
+    text-align: center;
+    border-bottom: none;
+  }
+  img {
+    display: block;
+  }
+}
+#drupal {
+  .grid {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  a {
+    background: none;
+    margin-bottom: 40px;
   }
 }
