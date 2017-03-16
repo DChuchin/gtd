@@ -29,8 +29,8 @@
   <section class="slide black" id="preproc-how-to">
     <h3>Как работает препроцессор</h3><img class="place" src="pictures/scss-to-css.png" width="80%">
   </section>
-  <section class="slide center">
-    <h2>Зачем?</h2>
+  <section class="slide">
+    <h2>7 крутых возможностей</h2><img class="place" src="pictures/seven.jpg" width="600px">
   </section>
   <section class="slide full">
    <h3>
@@ -156,7 +156,7 @@
   </div>
   </div>
   </section>
-  <section class="slide full">
+  <section class="slide full white">
    <h3>
       Импорт
    </h3>
@@ -262,14 +262,18 @@
        <h3>
          SCSS
        </h3>
-       
-  <pre class="hightlight"><code>
-  <span>$font-stack:</span> <span>Helvetica, sans-serif;</span>
-  <span>$primary-color:</span> #333;
   
-  <span>body</span>{
-  <span class="key">font:</span> $font-stack;
-  <span class="key">background-color:</span> $primary-color;
+  <pre class="hightlight"><code>
+  <span>$amber:</span> #FFBF00;
+  
+  <span class="selector">a</span> {
+    <span class="key">color:</span> $amber;
+    <span class="selector">&:hover</span> {
+       <span class="key">color:</span> lighten($amber, 10%);
+    }
+    <span class="selector">&:active</span> {
+       <span class="key">color:</span> darken($amber, 10%);
+    }
   }
   </code></pre>
   </div>
@@ -355,16 +359,16 @@
   <section class="slide center" id="plugins">
     <h2>Плагины</h2>
     <ul>
-      <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
+      <li class="next"><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
       <li class="next"><a href="https://github.com/cuth/postcss-pxtorem">Pxtorem</a></li>
       <li class="next"><a href="https://github.com/jonathantneal/precss">Precss</a></li>
       <li class="next"><a href="https://github.com/jonathantneal/oldie">Oldie</a></li>
       <li class="next"><a href="https://github.com/stylelint/stylelint">Stylelint</a></li>
-      <li class="next"><a href="https://github.com/azat-io/postcss-instagram">Postcss-instagram</a></li>
+      <li class="next"><a href="http://cssnext.io/">Cssnext</a></li>
       <li class="next"><a href="https://github.com/Semigradsky/postcss-russian-stylesheets">Postcss-russian-stylesheets</a></li>
     </ul>
   </section>
-  <section class="slide black"><img class="cover h" src="pictures/postcssvs.jpg" alt=""></section>
+  <section class="slide black clear"><img class="cover h" src="pictures/postcssvs.jpg" alt=""></section>
   <section class="slide clear" id="postcsssass"><img class="cover w" src="pictures/postcsssass.jpg"></section>
   <section class="slide center">
     <h2>Использование</h2>
@@ -408,17 +412,14 @@
   </section>
   <section class="slide center" id="adci"><a href="https://github.com/ADCI/gulp-starter-kit"><img src="pictures/adci.svg" width="70%">
       <h3>ADCI Starter Kit</h3></a></section>
-  <section class="slide" id="bootstrap">
-    <h2>Фреймворки</h2>
-    <div class="grid"><a href=""><img src="pictures/bootstrap.png" width="200px">Bootstrap</a><a href=""><img src="pictures/zurb.svg" width="200px">Zurb Foundation</a><a href=""><img src="pictures/materializecss.png" width="200px">Materialize</a></div>
-  </section>
   <section class="slide" id="drupal">
     <h2>Темы Drupal</h2>
     <div class="grid"><a href=""><img src="pictures/zen-logo.png" width="200px"></a><a href=""><img src="pictures/adaptivethemes.png" width="200px"></a></div>
     <div class="grid"><a href=""><img src="pictures/bootstrap_drupal.png" width="200px"></a><a href=""><img src="pictures/omega.png" width="200px"></a></div>
   </section>
-  <section class="slide center">
-    <h2>Спасибо за внимание</h2>
+  <section class="slide">
+    <h2 class="next">Спасибо за внимание</h2>
+    <div class="qr place"><img src="pictures/qr.svg" width="250px"><a href="https://dchuchin.github.io/gtd">dchuchin.github.io/gtd</a></div>
   </section>
   <footer class="badge"></footer>
   <div class="progress"></div>

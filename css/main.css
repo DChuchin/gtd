@@ -44,7 +44,7 @@ code {
 
 .slide {
   font-family: "Arial", sans-serif;
-  border: 20px solid #1f40ce;
+  border: 15px solid #1f40ce;
   border-radius: 5px;
   padding: 60px 60px 0; }
   .slide.full {
@@ -143,6 +143,14 @@ code {
 #drupal a {
   background: none;
   margin-bottom: 40px; }
+
+.qr {
+  text-align: center; }
+  .qr img {
+    display: block;
+    margin-bottom: 5px; }
+  .qr a {
+    display: inline-block; }
 
 #css-power {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -458,3 +466,6 @@ code {
 
 #intro h2 {
   font-size: 100px; }
+
+#intro:after {
+  display: none; }

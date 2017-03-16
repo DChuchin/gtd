@@ -7,14 +7,18 @@
 |      <h3>
 |        SCSS
 |      </h3>
-|      
-|<pre class="hightlight"><code>
-|<span>$font-stack:</span> <span>Helvetica, sans-serif;</span>
-|<span>$primary-color:</span> #333;
 |
-|<span>body</span>{
-|<span class="key">font:</span> $font-stack;
-|<span class="key">background-color:</span> $primary-color;
+|<pre class="hightlight"><code>
+|<span>$amber:</span> #FFBF00;
+|
+|<span class="selector">a</span> {
+|   <span class="key">color:</span> $amber;
+|   <span class="selector">&:hover</span> {
+|      <span class="key">color:</span> lighten($amber, 10%);
+|   }
+|   <span class="selector">&:active</span> {
+|      <span class="key">color:</span> darken($amber, 10%);
+|   }
 |}
 |</code></pre>
 |</div>
