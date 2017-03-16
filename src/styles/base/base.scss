@@ -50,7 +50,7 @@ code {
 }
 .slide {
   font-family: $arial;
-  border: 20px solid $blue;
+  border: 15px solid $blue;
   border-radius: 5px;
   padding: 60px 60px 0;
   &.full {
@@ -164,5 +164,15 @@ code {
   a {
     background: none;
     margin-bottom: 40px;
+  }
+}
+.qr {
+  text-align: center;
+  img {
+    display: block;
+    margin-bottom: 5px;
+  }
+  a {
+    display: inline-block;
   }
 }
