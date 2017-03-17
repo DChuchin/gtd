@@ -4,20 +4,13 @@ body {
   line-height: 1.2; }
 
 pre.hightlight {
-  background: rgba(31, 64, 206, 0.2);
+  background: rgba(31, 64, 206, 0.05);
   border-radius: 5px;
   margin-top: 10px; }
 
 code {
   font-size: 14px;
   line-height: 1; }
-  code .comment {
-    font-style: italic;
-    color: gray; }
-  code .import {
-    color: #1f40ce; }
-  code .selector {
-    color: #8f0334; }
   code .extend,
   code .mixin {
     color: purple; }
@@ -151,6 +144,41 @@ code {
     margin-bottom: 5px; }
   .qr a {
     display: inline-block; }
+
+.colors {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column; }
+
+.color {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center; }
+
+pre code .comment {
+  font-style: italic;
+  color: gray; }
+
+pre code .tag {
+  color: red; }
+
+pre code .class {
+  color: #996300; }
+
+pre code .key {
+  color: black; }
+
+pre code .val {
+  color: #996300; }
+
+pre code .var {
+  color: red; }
+
+pre code .import {
+  color: #1f40ce; }
 
 #css-power {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);

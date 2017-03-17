@@ -5,7 +5,7 @@ body {
 }
 pre {
   &.hightlight {
-    background: rgba($blue, .2);
+    background: rgba($blue, .05);
     border-radius: 5px;
     margin-top: 10px;
   }
@@ -13,16 +13,7 @@ pre {
 code {
   font-size: 14px;
   line-height: 1;
-  .comment {
-    font-style: italic;
-    color: gray;
-  }
-  .import {
-    color: $blue;
-  }
-  .selector {
-    color: rgb(143, 3, 52);
-  }
+
   .extend,
   .mixin {
     color: purple;
@@ -175,4 +166,17 @@ code {
   a {
     display: inline-block;
   }
+}
+.colors {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.color {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }

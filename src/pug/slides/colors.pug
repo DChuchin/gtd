@@ -1,6 +1,6 @@
 |<section class="slide full">
 |  <h3>
-|     Цветовые функции
+|    6. Цветовые функции
 |  </h3>
 |  <div class="columns code">
 |    <div class="col">
@@ -9,30 +9,28 @@
 |      </h3>
 |
 |<pre class="hightlight"><code>
-|<span>$amber:</span> #FFBF00;
+|<span class="var">$red:</span> <span class="class">#ff0000</span>;
 |
-|<span class="selector">a</span> {
-|   <span class="key">color:</span> $amber;
-|   <span class="selector">&:hover</span> {
-|      <span class="key">color:</span> lighten($amber, 10%);
+|<span class="tag">a</span> {
+|   <span class="key">color:</span> <span class="var">$red;</span>
+|   <span class="tag">&<span class="class">:hover</span></span> {
+|      <span class="key">color:</span> <span class="import">lighten(<span class="var">$red</span>, 10%)</span>;
 |   }
-|   <span class="selector">&:active</span> {
-|      <span class="key">color:</span> darken($amber, 10%);
+|   <span class="tag">&<span class="class">:active</span></span> {
+|      <span class="key">color:</span> <span class="import">darken(<span class="var">$red</span>, 10%)</span>;
 |   }
 |}
 |</code></pre>
 |</div>
 |  <div class="col">
 |    <h3>
-|      CSS
+|      Результат
 |    </h3>
-|<pre class="hightlight"><code>
-|
-|<span>body</span> {
-|<span class="key">font:</span> 100% Helvetica, sans-serif;
-|<span class="key">background-color:</span> #efefef;
-|}
-|</code></pre>
+|<div class="colors">
+|<div class="color" style="background-color:#ff0000">#FF0000</div>
+|<div class="color" style="background-color:#ff3333">#FF3333</div>
+|<div class="color" style="background-color:#cc0000">#CC0000</div>
+|</div>
 |</div>
 |</div>
 |</section>
