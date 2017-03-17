@@ -30,7 +30,7 @@
     <h3>Как работает препроцессор</h3><img class="place" src="pictures/scss-to-css.png" width="80%">
   </section>
   <section class="slide">
-    <h2>7 крутых возможностей</h2><img class="place" src="pictures/seven.jpg" width="600px">
+    <h2>7 крутых возможностей препроцессоров</h2><img class="place" style="top:60%;" src="pictures/seven.jpg" width="750px">
   </section>
   <section class="slide full">
    <h3>
@@ -136,7 +136,7 @@
              <span class="key">border-radius</span>: <span class="val">$radius</span>;
   }
   
-  <span class="class">.box</span> {
+  <span class="tag">.box</span> {
      <span class="import">@include</span> <span class="var">border-radius(10px)</span>;
   }
   </code></pre>
@@ -146,7 +146,7 @@
        CSS
      </h3>
   <pre class="hightlight"><code>
-  <span class="class">.box</span> {
+  <span class="tag">.box</span> {
      <span class="key">-webkit-border-radius</span>: <span class="val">10px</span>;
         <span class="key">-moz-border-radius</span>: <span class="val">10px</span>;
          <span class="key">-ms-border-radius</span>: <span class="val">10px</span>;
@@ -197,8 +197,8 @@
   }
   
   <span class="tag">body</span> {
-  <span class="key">font:</span class="val"> 100% Helvetica, sans-serif</span>;
-  <span class="key">background-color:</span class="val"> #efefef</span>;
+    <span class="key">font:</span> <span class="val"> 100% Helvetica, sans-serif</span>;
+    <span class="key">background-color:</span> <span class="val"> #efefef</span>;
   }
   </code></pre>
   </div>
@@ -266,7 +266,7 @@
   <pre class="hightlight"><code>
   <span class="var">$red:</span> <span class="class">#ff0000</span>;
   
-  <span class="tag">a</span> {
+  <span class="tag">button</span> {
     <span class="key">color:</span> <span class="var">$red;</span>
     <span class="tag">&<span class="class">:hover</span></span> {
        <span class="key">color:</span> <span class="import">lighten(<span class="var">$red</span>, 10%)</span>;
