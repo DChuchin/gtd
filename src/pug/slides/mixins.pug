@@ -1,6 +1,6 @@
 |<section class="slide full">
 |  <h3>
-|     Миксины (примеси)
+|    3. Миксины (примеси)
 |  </h3>
 |  <div class="columns code">
 |    <div class="col">
@@ -8,15 +8,15 @@
 |        SCSS
 |      </h3>
 |<pre class="hightlight"><code>
-|<span class="mixin">@mixin border-radius($radius)</span> {
-|    -webkit-border-radius: $radius;
-|       -moz-border-radius: $radius;
-|        -ms-border-radius: $radius;
-|            border-radius: $radius;
+|<span class="mixin">@mixin border-radius(<span class="var">$radius</span>)</span> {
+|    <span class="key">-webkit-border-radius</span>: <span class="val">$radius</span>;
+|       <span class="key">-moz-border-radius</span>: <span class="val">$radius</span>;
+|        <span class="key">-ms-border-radius</span>: <span class="val">$radius</span>;
+|            <span class="key">border-radius</span>: <span class="val">$radius</span>;
 |}
 |
-|<span class="selector">.box</span> {
-|    <span class="import">@include border-radius(10px)</span>;
+|<span class="class">.box</span> {
+|    <span class="import">@include</span> <span class="var">border-radius(10px)</span>;
 |}
 |</code></pre>
 |</div>
@@ -25,11 +25,11 @@
 |      CSS
 |    </h3>
 |<pre class="hightlight"><code>
-|<span class="selector">.box</span> {
-|    -webkit-border-radius: 10px;
-|       -moz-border-radius: 10px;
-|        -ms-border-radius: 10px;
-|            border-radius: 10px;
+|<span class="class">.box</span> {
+|    <span class="key">-webkit-border-radius</span>: <span class="val">10px</span>;
+|       <span class="key">-moz-border-radius</span>: <span class="val">10px</span>;
+|        <span class="key">-ms-border-radius</span>: <span class="val">10px</span>;
+|            <span class="key">border-radius</span>: <span class="val">10px</span>;
 |}
 |</code></pre>
 |</div>

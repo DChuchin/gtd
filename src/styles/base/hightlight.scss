@@ -1,0 +1,26 @@
+pre {
+  code {
+    .comment {
+      font-style: italic;
+      color: gray;
+    }
+    .tag {
+      color: red;
+    }
+    .class {
+      color: darken(orange, 20%);
+    }
+    .key {
+      color: black;
+    }
+    .val {
+      color: darken(orange, 20%);
+    }
+    .var {
+      color: red
+    }
+    .import {
+      color: $blue;
+    }
+  }
+}
