@@ -1,5 +1,5 @@
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 16px;
   line-height: 1.2; }
 
@@ -36,7 +36,7 @@ code {
   color: #19fea0; }
 
 .slide {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto Mono", monospace;
   border: 15px solid #1f40ce;
   border-radius: 5px;
   padding: 60px 60px 0; }
@@ -60,7 +60,7 @@ code {
   box-shadow: none; }
 
 .slide h2 {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 64px;
   color: blue;
   text-align: center;
@@ -186,7 +186,7 @@ pre code .import {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   padding: 0;
   border: none;
-  font: 16em/1 "Arial", sans-serif; }
+  font: 16em/1 "Roboto Mono", monospace; }
   #css-power:after {
     opacity: 0; }
   #css-power .text--line {
@@ -495,7 +495,8 @@ pre code .import {
   vertical-align: middle; }
 
 #intro h2 {
-  font-size: 100px; }
+  font-size: 100px;
+  margin-bottom: 0; }
 
 #intro:after {
   display: none; }
